@@ -10,6 +10,8 @@ int _printf(const char *format, ...)
 	va_list ap;
 	int count;
 
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+		return (-1);
 	count = 0;
 	if (format == NULL)
 		return (0);
@@ -28,6 +30,8 @@ int _printf(const char *format, ...)
 				count += _putchar('%');
 			else if (*format == 's' || *format == 'c')
 				count += get_char(format, ap);
+			else if (*format == 'd' || *format == 'i')
+				count += get_number(format, ap);
 		}
 		++format;
 	}
