@@ -20,6 +20,9 @@ int get_char(const char *format, va_list ap)
 	else
 	{
 		str = va_arg(ap, char*);
+
+		if (str == NULL)
+			str = "(null)";
 		while (*str)
 		{
 			_putchar(*str);
