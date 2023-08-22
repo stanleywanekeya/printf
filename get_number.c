@@ -8,11 +8,13 @@
 int place_number(int j)
 {
 	int c, count;
+	char k;
 
 	if (j / 10 != 0)
 		count = 1 + place_number(j / 10);
 	c = j % 10;
-	_putchar(c + '0');
+	k = c + '0';
+	write(1, &k, 1);
 	return (count);
 }
 /**
@@ -25,7 +27,9 @@ int place_number(int j)
 int get_number(const char *format, va_list ap)
 {
 	int number, count;
+	char k;
 
+	k = '-';
 	count = 0;
 	if (*format == 'd' || *format == 'i')
 	{
@@ -33,7 +37,7 @@ int get_number(const char *format, va_list ap)
 		if (number < 0)
 		{
 			number = -number;
-			_putchar('-');
+			write(1, &k, 1);
 			count = place_number(number);
 		}
 		else

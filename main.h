@@ -2,6 +2,7 @@
 #define MAIN_H
 #include <stdarg.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int get_number(const char*, va_list);
 int get_char(const char*, va_list);
