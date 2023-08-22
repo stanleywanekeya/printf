@@ -10,11 +10,9 @@ int _printf(const char *format, ...)
 	va_list ap;
 	int count;
 
-	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
-		return (-1);
 	count = 0;
 	if (format == NULL)
-		return (0);
+		return (-1);
 	va_start(ap, format);
 	while (*format)
 	{
