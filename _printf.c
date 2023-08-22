@@ -24,7 +24,9 @@ int _printf(const char *format, ...)
 		else
 		{
 			++format;
-			if (*format == 's' || *format == 'c')
+			if (*format == '%')
+				count += _putchar('%');
+			else if (*format == 's' || *format == 'c')
 				count += get_char(format, ap);
 		}
 		++format;
