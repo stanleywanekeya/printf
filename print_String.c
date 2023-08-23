@@ -2,7 +2,7 @@
 
 /**
  * print_String - print exclusuives string.
- * @l: argumen t.
+ * @val: argumen t.
  * Return: the length of the string.
  */
 
@@ -46,7 +46,7 @@ int isNonAlphaNumeric(char c)
  * convert - converts number and base into string
  * @num: input number
  * @base: input base
- * @lowercase: flag if hexa lues need to be lowercase
+ * @lowercase: flag if hexa values need to be lowercase
  * Return: result string
  */
 
