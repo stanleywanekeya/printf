@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_string - Prints a string
+ * print_string - Print a string
  * @list: list of arguments
  * Return: Will return the amount of characters printed.
  */
