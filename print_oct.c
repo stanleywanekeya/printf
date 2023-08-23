@@ -10,8 +10,8 @@ int print_octal(va_list list)
 {
 	unsigned int num;
 	int len;
-	char *octal;
-	char *reverse;
+	char *octal_rep;
+	char *rev_str;
 
 	num = va_arg(list, unsigned int);
 
@@ -21,22 +21,22 @@ int print_octal(va_list list)
 		return (-1);
 	len = base_len(num, 8);
 
-	octal = malloc(sizeof(char) * len + 1);
-	if (octal == NULL)
+	octal_rep = malloc(sizeof(char) * len + 1);
+	if (octal_rep == NULL)
 		return (-1);
 	for (len = 0; num > 0; len++)
 	{
-		octal[len] = (num % 8) + 48;
+		octal_rep[len] = (num % 8) + 48;
 		num = num / 8;
 
 	}
-	octal[len] = '\0';
-	reverse = rev_string(octal);
-	if (reverse == NULL)
+	octal_rep[len] = '\0';
+	rev_str = rev_string(octal_rep);
+	if (rev_str == NULL)
 		return (-1);
 
-	write_base(reverse);
-	free(octal);
-	free(reverse);
+	write_base(rev_str);
+	free(octal_rep);
+	free(rev_str);
 	return (len);
 }
