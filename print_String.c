@@ -2,10 +2,11 @@
 
 /**
  * print_String - print exclusuives string.
- * @l: argumen t.
+ * @val: argumen t.
  * Return: the length of the string.
  */
-int print_String(va_list val)
+
+int print_String(va_list l)
 {
 	register short len = 0;
 	char *res, *s = va_arg(l, char *);
@@ -28,16 +29,19 @@ int print_String(va_list val)
 	}
 	return (len);
 }
+
 /**
  * isNonAlphaNumeric - determines if char is a non-
  * alphanumeric char on ASCII table
  * @c: input char
  * Return: true or false
  */
-int isNonAlphaNumeric(char c)
+
+int isNonAlphaNumeric(char c) 
 {
 	return ((c > 0 && c < 32) || c >= 127);
 }
+
 /**
  * convert - converts number and base into string
  * @num: input number
@@ -45,6 +49,7 @@ int isNonAlphaNumeric(char c)
  * @lowercase: flag if hexa values need to be lowercase
  * Return: result string
  */
+
 char *convert(unsigned long int num, int base, int lowercase)
 {
 	static char *rep;
