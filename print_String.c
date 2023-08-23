@@ -2,13 +2,13 @@
 
 /**
  * print_String - print exclusuives string.
- * @val: argumen t.
+ * @l: argumen t.
  * Return: the length of the string.
  */
 int print_String(va_list val)
 {
 	register short len = 0;
-	char *res, *s = va_arg(val, char *);
+	char *res, *s = va_arg(l, char *);
 	int count;
 
 	if (!s)
