@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_unsigned_integer - Prints Unsigned integers
+ * print_unsigned_integer - Print Unsigned integers
  * @list: List of all of the argumets
  * Return: a count of the numbers
  */
