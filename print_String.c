@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_String - print exclusuives string.
+ * print_String - print exclusuive string.
  * @l: argumen t.
  * Return: the length of the string.
  */
