@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_hex - Prints a representation of a decimal number on base16 lowercase
+ * print_hex - Prints a representation of a decimal numbers on base16 lowercase
  * @list: List of the arguments passed to the function
  * Return: Number of characters printed
  */
