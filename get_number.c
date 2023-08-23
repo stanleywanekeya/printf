@@ -2,7 +2,7 @@
 
 /**
  * print_integer - Prints an integer
- * @list: list of arguments
+ * @list: list of all arguments
  * Return: Will return the amount of characters printed.
  */
 
