@@ -3,7 +3,7 @@
 /**
  * print_string - Prints a string
  * @list: list of arguments
- * Return: return length of string.
+ * Return: Will return the amount of characters printed.
  */
 
 int print_string(va_list list)
