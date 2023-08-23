@@ -12,6 +12,7 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
+
 /**
  * _puts - prints a string to stdout
  * @str: pointer to the string to print
