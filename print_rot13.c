@@ -10,9 +10,9 @@ int print_rot13(va_list list)
 {
 	int i;
 	int x;
+	char *str;
 	char s[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char u[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	char *str;
 
 	str = va_arg(list, char *);
 	if (str == NULL)
