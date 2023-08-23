@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	int printed_chars;
-	conver_t list[] = {
+	conver_t f_list[] = {
 		{"%", print_percent},
 		{"d", print_integer},
 		{"i", print_integer},
@@ -27,12 +27,13 @@ int _printf(const char *format, ...)
 		{"R", print_rot13},
 		{NULL, NULL},
 	};
-	va_list ap_list;
+	va_list arg_list;
 
 	if (format == NULL)
 		return (-1);
-	va_start(ap_list, format);
-	printed_chars = get_format(format, list, ap_list);
-	va_end(ap_list);
+
+	va_start(arg_list, format);
+	printed_chars = format_reciever(format, f_list, arg_list);
+	va_end(arg_list);
 	return (printed_chars);
 }
