@@ -20,6 +20,7 @@ int print_hex_aux(unsigned long int num)
 	}
 	counter++;
 	array = malloc(counter * sizeof(long int));
+
 	for (i = 0; i < counter; i++)
 	{
 		array[i] = temp % 16;
@@ -31,7 +32,6 @@ int print_hex_aux(unsigned long int num)
 			array[i] = array[i] + 39;
 		_putchar(array[i] + '0');
 	}
-
 	free(array);
 	return (counter);
 }
