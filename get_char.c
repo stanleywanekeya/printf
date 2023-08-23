@@ -2,7 +2,7 @@
 
 /**
  * print_char - Prints character
- * @list: list of arguments
+ * @list: list of all arguments
  * Return: Will return the amount of characters printed.
  */
 
