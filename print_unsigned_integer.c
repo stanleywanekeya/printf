@@ -32,12 +32,10 @@ int print_unsgined_number(unsigned int n)
 	int div;
 	int len;
 	unsigned int num;
-
+	
 	div = 1;
 	len = 0;
-
 	num = n;
-
 	for (; num / div > 9; )
 		div *= 10;
 
@@ -47,6 +45,5 @@ int print_unsgined_number(unsigned int n)
 		num %= div;
 		div /= 10;
 	}
-
 	return (len);
 }
