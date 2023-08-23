@@ -2,7 +2,7 @@
 
 /**
  * base_len - Calculates the length for an octal number
- * @num: The number for which the length is being calculated
+ * @num: Is the number for which the length is being calculated
  * @base: Base to be calculated by
  * Return: An integer representing the length of a number
  */
